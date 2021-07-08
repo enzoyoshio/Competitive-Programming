@@ -118,8 +118,6 @@ struct line{
         c = -(a*p1.x + b*p1.y);
     }
     line(cod a=0, cod b=0, cod c=0): a(a), b(b), c(c){
-        // Gera os pontos p1 p2 dados os coeficientes
-        // isso aqui é horrível mas quebra um galho kkkkkk
         if(b==0){
             p1 = point(1, -c/a);
             p1 = point(0, -c/a);
